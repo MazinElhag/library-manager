@@ -1,14 +1,14 @@
 package Library_Manager;
 
 public class Book {
-    private int id = 0;
+    private int id;
     private String title, author, category;
     private double price;
     private long bookCode;
-    private int stock;
 
-    public Book(String title, String author, String category, double price, long bookCode){
-        id++;
+
+    public Book(int id, String title, String author, String category, double price, long bookCode){
+        this.id = id;
         this.title = title;
         this.author = author;
         this.category = category;
